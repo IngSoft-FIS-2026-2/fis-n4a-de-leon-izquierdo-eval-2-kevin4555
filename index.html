@@ -14,7 +14,7 @@
 
   <body>
     <div class="container mt-3">
-      <div class="card p-1">
+      <div class="card p-3">
         <h2 class="mb-3">Registro de Película</h2>
         <div class="text-center mb-1">
           <img
@@ -25,25 +25,25 @@
           Completa el siguiente formulario para registrar una película en el
           sistema.
         </p>
-        <form>
+        <form class="form-control">
           <div class="mb-3">
-            <label for="title">Título de la película</label>
+            <label class="form-label" for="title">Título de la película</label>
             <input type="text" name="title" required />
           </div>
 
           <div class="mb-3">
-            <label>Año de estreno</label>
+            <label class="form-label">Año de estreno</label>
             <input id="year" name="year" min="1900" max="2026" />
           </div>
           <div class="mb-3">
-            <label>Director</label>
+            <label class="form-label">Director</label>
             <input id="director" name="director" required />
           </div>
           <div class="mb-3">
-            <label>Vista?</label>
+            <label class="form-label">Vista?</label>
             <input type="checkbox" id="vista" name="vista" />
           </div>
-          <div class="mb-3">
+          <div class="mb-3 btn btn-success">
             <button type="submit">Registrar</button>
           </div>
         </form>
