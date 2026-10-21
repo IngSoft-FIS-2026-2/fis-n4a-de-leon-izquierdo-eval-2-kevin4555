@@ -18,6 +18,7 @@
         <h2 class="mb-3">Registro de Película</h2>
         <div class="text-center mb-1">
           <img
+            alt="principal"
             src="https://img.freepik.com/vector-premium/banner-cine-cine_108855-4895.jpg?semt=ais_hybrid&w=740"
           />
         </div>
@@ -27,20 +28,20 @@
         </p>
         <form class="form-control">
           <div class="mb-3">
-            <label class="form-label" for="title">Título de la película</label>
-            <input type="text" name="title" required />
+            <label class="form-label" for="titulo">Título de la película</label>
+            <input type="text" name="title" required id="titulo" />
           </div>
 
           <div class="mb-3">
-            <label class="form-label">Año de estreno</label>
+            <label class="form-label" for="year">Año de estreno</label>
             <input id="year" name="year" min="1900" max="2026" />
           </div>
           <div class="mb-3">
-            <label class="form-label">Director</label>
+            <label class="form-label" for="director">Director</label>
             <input id="director" name="director" required />
           </div>
           <div class="mb-3">
-            <label class="form-label">Vista?</label>
+            <label class="form-label" for="vista">Vista?</label>
             <input type="checkbox" id="vista" name="vista" />
           </div>
           <div class="mb-3">
