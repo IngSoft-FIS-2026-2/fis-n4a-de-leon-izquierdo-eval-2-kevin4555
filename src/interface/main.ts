@@ -13,14 +13,16 @@ if (form && list) {
     const data = new FormData(form);
     const title = String(data.get("title") ?? "");
     const year = String(data.get("year") ?? "");
+    const director = String(data.get("director") ?? "");
+    const vista = Boolean(data.get("vista") ?? false);
 
-    const movie = new Movie(title, year);
+    const movie = new Movie(title, year, director, vista);
     movies.add(movie);
 
     list.replaceChildren(
       ...movies.getAll().map((movie) => {
         const item = document.createElement("li");
-        item.textContent = `${movie.title} (${movie.year})`;
+        item.textContent = `${movie.title} (${movie.year}), director: ${movie.director}, vista: ${movie.vista}`;
         return item;
       }),
     );
